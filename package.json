@@ -1,0 +1,23 @@
+{
+  "name": "fargate_test",
+  "version": "1.0.0",
+  "description": "Testing AWS Fargate with a tiny web app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lalvarezguillen/fargate_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lalvarezguillen/fargate_test/issues"
+  },
+  "homepage": "https://github.com/lalvarezguillen/fargate_test#readme",
+  "dependencies": {
+    "server": "^1.1.0-alpha.1"
+  }
+}
