@@ -1,8 +1,10 @@
 const process = require('process');
-const server = require('server');
-const { get, post } = server.router;
+const koa = require('koa');
 
 
+const port = process.env.FARGATE_TEST_PORT;
+const env = process.env.FARGATE_TEST_ENV;
+const app = new koa();
 
-server({ port: process.env.fargate_test_port || 80 }, 
-    get('/', ctx => 'Hello, from Fargate!'))
+app.use(async ctx => ctx.body = `Hello from the ${env} environment!`);
+app.listen(port)

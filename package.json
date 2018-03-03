@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/lalvarezguillen/fargate_test#readme",
   "dependencies": {
-    "server": "^1.1.0-alpha.1"
+    "koa": "^2.5.0"
   }
 }
